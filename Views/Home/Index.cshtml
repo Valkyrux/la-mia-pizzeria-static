@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="container">
+        <div class="row">
+            @foreach(var element in ViewData["listaPizze"] as List<Pizza>)
+            {
+                <div class="col-3">
+                    <div class="card">
+                        <img class="card-img-top" src="~/img/@element.ImgPath" alt="@element.Name">
+                        <div class="card-body">
+                            <h5 class="card-title">@element.Name</h5>
+                            <p class="card-text">@element.Description</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
