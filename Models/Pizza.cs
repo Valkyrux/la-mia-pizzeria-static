@@ -7,14 +7,14 @@
 
         public string? ImgPath { get; set; }
 
-        public float Price { get; set; }
+        public string Price { get; set; }
         
-        public Pizza(string nome, string? description, string? imgPath, float prezzo)
+        public Pizza(string nome, string? description, string? imgPath, double prezzo)
         {
             Name = nome;
             Description = description;
             ImgPath = imgPath;
-            Price = prezzo;
+            Price = prezzo.ToString("0.00").Replace('.', ',');
         }
     }
 }

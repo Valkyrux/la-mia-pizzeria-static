@@ -16,3 +16,13 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+img{
+    width: 300px !important;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card{
+    overflow: hidden;
+}
